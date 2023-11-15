@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Accelerating GPT-2 Inference with TVM DLight Auto-Scheduling</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Accelerating GPT-2 Inference with TVM DLight Auto-Scheduling</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="mailto:cfruan@andrew.cmu.edu" target="_blank">Charlie Ruan (cfruan)</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="mailto:xzhou2@andrew.cmu.edu" target="_blank">Xun Zhou (xzhou2)</a><sup>*</sup>,</span>
+
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Carnegie Mellon University<br>15-618 F23 Final Project Proposal</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Final Report (Placeholder)</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (Placeholder)</span>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-info">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The goal of this project is two-fold: optimizing GPT-2’s inference performance with TVM on various GPU backends (e.g. CUDA, ROCm, WebGPU), and analyzing and tuning TVM’s auto-scheduler DLight. For the first part, we will implement GPT-2’s inference on the open-source framework MLC-LLM, which allows us to optimize LLM workloads with TVM conveniently. For the second part, we will analyze the effect of various transformations performed by DLight (both performance and code generation), perform benchmarks across devices, and further tune the scheduler to optimize GPT-2’s performance for a specific backend.          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Background -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Background</h2>
+        <div class="content has-text-justified">
+          <p>
+            GPT-2 is a transformer-based decoder-only language model that can benefit significantly from parallelism due to its computational intensity. This project only focuses on the inference phase and focuses on the parallelism brought by multi-core GPUs, including CUDA (Nvidia GPUs), ROCm (AMD GPUs), and WebGPU (available on Chrome). Specifically, the matrix multiplications in GPT-2 can benefit significantly from such highly parallelizable backends.
+          </p><p>
+            To optimize the distribution and execution of the workload, we leverage TVM, a domain-specific framework for machine learning compilation. To use TVM, there are two general steps: defining the task, and optimizing the task with a scheduler. For the first step, we will use the recently developed open-source framework MLC-LLM, which is built on top of TVM and dedicated to large language models like GPT-2. For the second step, we focus on DLight, an auto-scheduler in TVM that optimizes machine learning workloads. An example usage of DLight is shown below.
+          </p>
+          <img src="static/images/dlight-example.png" alt="dlight example" width="50%" class="center"/>
+          <p>  
+            Some general parallelizing optimizations include reducing data transfer under a GPU’s multi-core setting, dividing the workload to best leverage a GPU’s architecture (e.g. structuring of for loops), and incorporating various other techniques such as tiling. With these, we optimize the performance of GPT-2, measured by the number of tokens per second (for both the prefilling and decoding phases).
+          </p></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End background -->
+
+<!-- Challenges -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Challenges</h2>
+        <div class="content has-text-justified">
+          <p>
+          The inference of GPT-2 resembles that of most transformer-based decoder-only language models, revolving around various matrix-matrix multiplications. Given that we use a single device, the main characteristics of the workload include: it is computationally intensive due to the massive number of parameters, and it is easily bounded by memory bandwidth when using techniques like KV cache.
+          </p>
+          <p>Some constraints that make the system hard to parallelize include the fact that inference in LLMs like GPT-2 is in an autoregressive manner, meaning that the generation of a token depends on the previous token—so we have to generate one token at a time sequentially. This poses a challenge because we can only try to exploit parallelism at a much lower level, mainly the operators like matrix multiplications.
+          </p>
+          
+          <p>
+          While there is a plethora of optimization tricks and techniques, we focus on operator-level optimization. As mentioned above, we will use DLight to achieve such optimization. Since the project includes domain-specific programming, one challenge for us is to gain domain knowledge (e.g. what are the typical techniques for operator optimization, including how GEMV works), and another is to understand the existing software stack of TVM so that we can tune the scheduler. Since we aim to analyze the effect of various scheduling rules, one more challenge is that we need to understand the semantics of the generated code, some of which are not typical code we use (e.g. the WebGPU shading language).
+          </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End challenges -->
+
+<!-- Resources -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Resources</h2>
+        <div class="content has-text-justified">
+          <p>
+          To test GPT-2’s inference, we will use a single RTX 4090 for the CUDA backend, a single Rx 7900 for the ROCm backend, and an Apple Macbook for the WebGPU backend. 
+          </p>
+          <p>
+          The first step of our project is to implement GPT-2 in MLC-LLM (i.e. specifying the algorithm to optimize). We will work with the existing code base <a href="https://github.com/mlc-ai/mlc-llm" target="_blank">MLC-LLM</a> and submit a Pull Request.
+          </p>
+          The second step of our project is to analyze and tune the DLight schedule. We will refer to the codebase of DLight found <a href="https://github.com/apache/tvm/tree/unity/python/tvm/dlight" target="_blank">here</a>.  
+          <p>
+          Some other resources we will refer to include the <a href="https://arxiv.org/abs/1802.04799">TVM paper</a>, the <a href="https://arxiv.org/abs/2311.02103">Relax paper (a new abstraction under TVM)</a>, and perhaps many more.
+          </p>
+          For specific languages like WebGPU shader language, we can refer to its <a href="https://www.w3.org/TR/WGSL/">documentation</a>. 
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End resources -->
+
+<!-- Goals and Deliverables -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Goals and Deliverables</h2>
+        <div class="content has-text-justified">
+          
+          <p>This project is mainly an analysis project, hoping to understand how various scheduling rules in DLight affect the performance of LLM inference on various backends. With that being said, we plan to achieve the workload-defining part and the analysis part; we hope to achieve better results than the given scheduling rule on a specific backend by tuning the scheduler. We put it more concretely below.</p>
+
+          <h4 class="title is-5">PLAN TO ACHIEVE</h4>
+          <ul>
+              <li>Implement GPT-2 inference in MLC-LLM, so that it can be optimized with the default DLight schedule.</li>
+              <li>Benchmark GPT-2 inference performance and speedup across various backends.</li>
+              <li>For each scheduling rule provided by DLight:
+                  <ul>
+                      <li>Analyze how it affects: the target code generated (e.g. CUDA code), and the performance gained.</li>
+                      <li>Compare how much speedup each backend gains for each rule.</li>
+                      <li>If applicable, within a specific scheduling rule, analyze how hyperparameters affect performance on different backends</li>
+                  </ul>
+              </li>
+          </ul>
+      
+          <h4 class="title is-5">HOPE TO ACHIEVE</h4>
+          <p>Pick a specific backend, say WebGPU, and tune the scheduling rule tailored towards that backend, hoping to achieve better performance than the default schedule used.</p>
+      
+          <h4 class="title is-5">DEMO PLAN</h4>
+          <p>For the poster session, we will dedicate a portion to give an overview of the GPT-2 inference workload, and how it can be optimized via TVM (the task-defining portion, and the performance-optimizing portion). Afterward, for each scheduling rule, we will describe what it does, give an example change in the code (e.g. after this transformation, how this CUDA kernel changed), and draw a graph that compares how each backend benefits from this rule. If we achieve our stretch goal, we will add another section illustrating how we achieve better speedup than the default scheduling rule.</p>
+      
+        </div>
+    </div>
+  </div>
+</section>
+<!-- End goals -->
+
+<!-- Platform Choice -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Platform Choice</h2>
+        <div class="content has-text-justified">
+          
+          <p>
+            First of all, we use GPUs because this is the typical go-to type of device for machine learning workloads due to how good they are for matrix operations. We include CUDA (i.e. Nvidia GPU) mostly as a reference since this is the most conventional GPU backend. We include WebGPU because while the default schedule may be highly optimized for common backends like CUDA, it may not be the case for less conventional ones like WebGPU. This gives us the space to potentially gain more speedup by tuning the scheduling rule. We include ROCm (i.e. AMD GPU) as a middle ground.
+
+          </p>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- End platform -->
+
+<!-- Schedule -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Schedule</h2>
+        <div class="content has-text-justified">
+          
+          <table border="1">
+            <tr>
+              <th class="schedule-column">SCHEDULE</th>
+              <th>Activities</th>
+            </tr>
+            <tr>
+                <td>Week 1<br>(11/13 - 11/19)</td>
+                <td>
+                    <ul>
+                        <li>Brainstorm project scope and submit proposal</li>
+                        <li>Start implementing GPT 2 in MLC-LLM</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Week 2<br>(11/20 - 11/26)</td>
+                <td>
+                  <ul>
+                    <li>Finish and verify GPT 2 implementation in MLC-LLM
+                      </li></ul>
+                    </td>
+            </tr>
+            <tr>
+                <td>Week 3<br>(11/27 - 12/3)</td>
+                <td>
+                    <ul>
+                        <li>Benchmark speedup for different backends with default scheduler</li>
+                        <li>Analyze effects of each scheduling rule for each rule</li>
+                        <li>Complete milestone report (due 12/2)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Week 4<br>(12/4 - 12/10)</td>
+                <td>
+                    <ul>
+                        <li>Finish analysis if not done</li>
+                        <li>Tune scheduler to achieve a better speedup for a specific backend</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Week 5<br>(12/11 - 12/17)</td>
+                <td>
+                    <ul>
+                        <li>Tune scheduler to achieve a better speedup for a specific backend</li>
+                        <li>Complete final report and poster (due 12/14)</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- End schedule -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>Placeholder</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
