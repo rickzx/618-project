@@ -72,13 +72,23 @@
                            <!-- Arxiv PDF link -->
                         <span class="link-block">
                           <a href="https://github.com/rickzx/618-project/blob/main/static/pdfs/project_proposal.pdf" target="_blank"
-                          class="external-link button is-normal is-rounded is-dark">
-                          <span class="icon">
-                            <i class="fas fa-file-pdf"></i>
-                          </span>
-                          <span>Proposal</span>
-                        </a>
-                      </span>
+                            class="external-link button is-normal is-rounded is-dark">
+                            <span class="icon">
+                              <i class="fas fa-file-pdf"></i>
+                            </span>
+                            <span>Proposal</span>
+                          </a>
+                        </span>
+
+                        <span class="link-block">
+                          <a href="https://github.com/rickzx/618-project/blob/main/static/pdfs/project_milestone.pdf" target="_blank"
+                            class="external-link button is-normal is-rounded is-dark">
+                            <span class="icon">
+                              <i class="fas fa-file-pdf"></i>
+                            </span>
+                            <span>Milestone</span>
+                          </a>
+                        </span>
 
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
@@ -248,6 +258,112 @@
 </section>
 <!-- End platform -->
 
+<!-- Preliminary Results -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Preliminary Results: Benchmarks across platforms</h2>
+        <div class="content has-text-justified">
+          
+          <p>After implementing GPT 2, we ran its inference with TVM on the CUDA backend (with a single RTX 4090), on a Macbook Pro (Intel), and on the WebGPU backend (on the same Macbook Pro). We use the number of tokens per second to describe the performance. Specifically, we prefill 322 tokens (the entire Gettysburg Address) and let the model generate 64 tokens autoregressively.</p>
+          
+          <table border="1">
+            <tr>
+              <th>Prefill (tokens/sec)</th>
+              <th>Decode (tokens/sec)</th>
+            </tr>
+            <tr>
+              <td>RTX 4090</td>
+              <td>4419.0</td>
+              <td>102.9</td>
+            </tr>
+            <tr>
+              <td>MacBook Pro (Intel)</td>
+              <td>28.9</td>
+              <td>1.1</td>
+            </tr>
+            <tr>
+              <td>WebGPU (same MacBook Pro)</td>
+              <td>10.96</td>
+              <td>0.81</td>
+            </tr>
+          </table>
+          
+          <p>From the result, one thing to notice is that, despite leveraging the same hardware, we are receiving worse results on the WebGPU backend. This makes one of the goal for us to explore better operator-level optimization for the WebGPU backend to utilize its hardware better, hopefully closing the gap. Note that we mentioned in the proposal that we will also be testing on the ROCm backend (AMD GPU) – due to hardware issues, we will supplement the result in the final submission.</p>
+          
+
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Preliminary Results: Effects of each operator-level optimization</h2>
+        <div class="content has-text-justified">
+          
+          <p>Recall that, as mentioned in the proposal, we focus on operator-level optimization within TVM, and such optimization is done in a sub-framework called DLight. The usage of DLight can be illustrated as below:</p>
+          
+          <p>After implementing GPT-2 in MLC LLM, another benchmarking we did was to determine how much effect each rule has on the performance. Below are the results after running the same experiment on RTX 4090 (prefilling 322 tokens, generating 64 tokens autoregressively):</p>
+          
+          <table border="1">
+            <tr>
+              <th>Schedule</th>
+              <th>Prefill (tokens/sec)</th>
+              <th>Prefill Speedup</th>
+              <th>Decode (tokens/sec)</th>
+              <th>Decode Speedup</th>
+            </tr>
+            <tr>
+              <td>Baseline</td>
+              <td>70.0</td>
+              <td>1x</td>
+              <td>3.5</td>
+              <td>1x</td>
+            </tr>
+            <tr>
+              <td>Matmul</td>
+              <td>3321.4</td>
+              <td>47.4x</td>
+              <td>3.5</td>
+              <td>1x</td>
+            </tr>
+            <tr>
+              <td>GEMV</td>
+              <td>70.1</td>
+              <td>1x</td>
+              <td>53.5</td>
+              <td>15.3x</td>
+            </tr>
+            <tr>
+              <td>Reduction</td>
+              <td>70.1</td>
+              <td>1x</td>
+              <td>60.7</td>
+              <td>17.3x</td>
+            </tr>
+            <tr>
+              <td>Full</td>
+              <td>4419.0</td>
+              <td>63.1x</td>
+              <td>102.9</td>
+              <td>29.4x</td>
+            </tr>
+          </table>
+          
+          <p>“Baseline” denotes without using any optimization, and “full” denotes using all optimization. Note that we consider Reduction() and GeneralReduction() as a single rule; we also note that due to the current implementation, we need to include Fallback() in all schedules, hence considering it as part of the baseline.</p>
+          
+          <p>We observe that matrix multiplication contributes the most speedup for the prefill stage, which makes sense because during prefill, most operations are matrix-matrix multiplication. This is due to how we have multiple values in the Q matrix. Meanwhile, GEMV, which optimizes matrix-vector multiplication, contributes to the speedup during decoding. Similarly, this makes sense because we only have a single query token in the Q matrix during the decoding stage.</p>
+            
+
+        </div>
+    </div>
+  </div>
+</section>
+
 <!-- Schedule -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -292,8 +408,8 @@
                 <td>Week 4<br>(12/4 - 12/10)</td>
                 <td>
                     <ul>
-                        <li>Finish analysis if not done</li>
-                        <li>Tune scheduler to achieve a better speedup for a specific backend</li>
+                        <li>Learn how each scheduler rule transforms the program</li>
+                        <li>Learn mechanisms of tuning the DLight scheduler (through machine learning, grid search, etc.); locate the hyperparameters</li>
                     </ul>
                 </td>
             </tr>
