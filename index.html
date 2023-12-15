@@ -71,7 +71,7 @@
                       <div class="publication-links">
                            <!-- Arxiv PDF link -->
                         <span class="link-block">
-                          <a href="https://github.com/rickzx/618-project/blob/main/static/pdfs/project_proposal.pdf" target="_blank"
+                          <a href="/static/pdfs/project_proposal.pdf" target="_blank"
                             class="external-link button is-normal is-rounded is-dark">
                             <span class="icon">
                               <i class="fas fa-file-pdf"></i>
@@ -81,7 +81,7 @@
                         </span>
 
                         <span class="link-block">
-                          <a href="https://github.com/rickzx/618-project/blob/main/static/pdfs/project_milestone.pdf" target="_blank"
+                          <a href="/static/pdfs/project_milestone.pdf" target="_blank"
                             class="external-link button is-normal is-rounded is-dark">
                             <span class="icon">
                               <i class="fas fa-file-pdf"></i>
@@ -93,23 +93,23 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="/static/pdfs/project_proposal.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-light">
+                        <a href="/static/pdfs/final_report.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
-                        <span>Final Report (Placeholder)</span>
+                        <span>Final Report</span>
                       </a>
                     </span>
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-light">
+                    <a href="https://github.com/rickzx/618-project/blob/main/code" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code (Placeholder)</span>
+                    <span>Code</span>
                   </a>
                 </span>
             </div>
@@ -119,6 +119,10 @@
     </div>
   </div>
 </section>
+
+<a href="/static/pdfs/poster.pdf">
+  <img src="/static/images/poster.png" alt="Image Description" class="centered-image-pad">
+</a>
 
 
 <!-- Paper abstract -->
@@ -358,6 +362,48 @@
           
           <p>We observe that matrix multiplication contributes the most speedup for the prefill stage, which makes sense because during prefill, most operations are matrix-matrix multiplication. This is due to how we have multiple values in the Q matrix. Meanwhile, GEMV, which optimizes matrix-vector multiplication, contributes to the speedup during decoding. Similarly, this makes sense because we only have a single query token in the Q matrix during the decoding stage.</p>
             
+
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final Results -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Further Optimization: Tuning GEMV</h2>
+        <div class="content has-text-justified">
+          
+          <img src="static/images/seq_gemv.png" alt="Sequential GEMV" class="centered-image"/>
+          
+          <p>To parallelize GEMV, TVM does the following steps:</p>
+          <ul>
+              <li>Break the N rows into groups of TS contiguous rows; each threadBlock takes a group.
+                  <p>(Note each threadBlock’s work is independent from each other since we split across the spatial axis)</p>
+              </li>
+              <li>Each block uses a thread layout of TS by TR
+                  <p>(i.e. each block has TS*TR threads; as a result, each thread has TS*K/(TS*TR) = K/TR amount of work)</p>
+              </li>
+              <li>Each thread block works on a tile of shape TILE_S by TILE_R at a time
+                  <p>(Again, TILE_S is split across the spatial axis, and TILE_R across the reduction)</p>
+              </li>
+          </ul>
+          <img src="static/images/par_gemv.png" alt="Parallel GEMV" class="centered-image"/>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Further Optimization: Final Result</h2>
+        <div class="content has-text-justified">
+
+        <img src="static/images/result.png" alt="Final result" class="centered-image"/>
 
         </div>
     </div>

@@ -139,6 +139,26 @@ body {
   width: 50%;
 }
 
+.centered-image-pad {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; /* makes the image responsive */
+  max-width: 600px; /* maximum size of the image */
+  height: auto; /* maintain aspect ratio */
+  margin-bottom: 80px; /* space below the image */
+}
+
+.centered-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; /* makes the image responsive */
+  max-width: 600px; /* maximum size of the image */
+  height: auto; /* maintain aspect ratio */
+  margin-bottom: 20px; /* space below the image */
+}
+
 hr {
   border: none; /* Removes the default border */
   height: 2px; /* Sets the height of the line */

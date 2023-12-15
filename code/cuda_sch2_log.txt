@@ -1,0 +1,936 @@
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=1	ts=512
+Time (ms): 0.216660	Total Bytes (MB): 12.015625	Memory (GB/s): 55.458348
+Best time (ms): 0.216660	Best Memory (GB/s): 55.458348	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 1, 'TS': 512}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=2	ts=256
+Time (ms): 0.105601	Total Bytes (MB): 12.015625	Memory (GB/s): 113.783336
+Best time (ms): 0.105601	Best Memory (GB/s): 113.783336	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 2, 'TS': 256}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=4	ts=128
+Time (ms): 0.059951	Total Bytes (MB): 12.015625	Memory (GB/s): 200.425367
+Best time (ms): 0.059951	Best Memory (GB/s): 200.425367	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 4, 'TS': 128}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=8	ts=64
+Time (ms): 0.037305	Total Bytes (MB): 12.015625	Memory (GB/s): 322.093788
+Best time (ms): 0.037305	Best Memory (GB/s): 322.093788	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 8, 'TS': 64}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=16	ts=32
+Time (ms): 0.035695	Total Bytes (MB): 12.015625	Memory (GB/s): 336.623047
+Best time (ms): 0.035695	Best Memory (GB/s): 336.623047	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 16, 'TS': 32}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=32	ts=16
+Time (ms): 0.032251	Total Bytes (MB): 12.015625	Memory (GB/s): 372.562155
+Best time (ms): 0.032251	Best Memory (GB/s): 372.562155	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 32, 'TS': 16}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=64	ts=8
+Time (ms): 0.028146	Total Bytes (MB): 12.015625	Memory (GB/s): 426.903316
+Best time (ms): 0.028146	Best Memory (GB/s): 426.903316	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 8}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=128	ts=4
+Time (ms): 0.025545	Total Bytes (MB): 12.015625	Memory (GB/s): 470.375702
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=256	ts=2
+Time (ms): 0.028399	Total Bytes (MB): 12.015625	Memory (GB/s): 423.093432
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=1	ts=256
+Time (ms): 0.117350	Total Bytes (MB): 12.015625	Memory (GB/s): 102.391298
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=2	ts=128
+Time (ms): 0.061250	Total Bytes (MB): 12.015625	Memory (GB/s): 196.173533
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=4	ts=64
+Time (ms): 0.033263	Total Bytes (MB): 12.015625	Memory (GB/s): 361.230079
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=8	ts=32
+Time (ms): 0.027983	Total Bytes (MB): 12.015625	Memory (GB/s): 429.392467
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=16	ts=16
+Time (ms): 0.030261	Total Bytes (MB): 12.015625	Memory (GB/s): 397.062945
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=32	ts=8
+Time (ms): 0.029124	Total Bytes (MB): 12.015625	Memory (GB/s): 412.574047
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=64	ts=4
+Time (ms): 0.025621	Total Bytes (MB): 12.015625	Memory (GB/s): 468.971801
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=128	ts=2
+Time (ms): 0.027651	Total Bytes (MB): 12.015625	Memory (GB/s): 434.538852
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=256	ts=1
+Time (ms): 0.025956	Total Bytes (MB): 12.015625	Memory (GB/s): 462.928895
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=1	ts=128
+Time (ms): 0.068258	Total Bytes (MB): 12.015625	Memory (GB/s): 176.032119
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=2	ts=64
+Time (ms): 0.046306	Total Bytes (MB): 12.015625	Memory (GB/s): 259.485858
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=4	ts=32
+Time (ms): 0.031988	Total Bytes (MB): 12.015625	Memory (GB/s): 375.629847
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=8	ts=16
+Time (ms): 0.030846	Total Bytes (MB): 12.015625	Memory (GB/s): 389.532763
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=16	ts=8
+Time (ms): 0.030181	Total Bytes (MB): 12.015625	Memory (GB/s): 398.118982
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=32	ts=4
+Time (ms): 0.026265	Total Bytes (MB): 12.015625	Memory (GB/s): 457.474764
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=64	ts=2
+Time (ms): 0.027684	Total Bytes (MB): 12.015625	Memory (GB/s): 434.031227
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=128	ts=1
+Time (ms): 0.026876	Total Bytes (MB): 12.015625	Memory (GB/s): 447.084705
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=1	ts=64
+Time (ms): 0.058517	Total Bytes (MB): 12.015625	Memory (GB/s): 205.334471
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=2	ts=32
+Time (ms): 0.043860	Total Bytes (MB): 12.015625	Memory (GB/s): 273.953121
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=4	ts=16
+Time (ms): 0.029348	Total Bytes (MB): 12.015625	Memory (GB/s): 409.423613
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=8	ts=8
+Time (ms): 0.027104	Total Bytes (MB): 12.015625	Memory (GB/s): 443.314744
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=16	ts=4
+Time (ms): 0.031302	Total Bytes (MB): 12.015625	Memory (GB/s): 383.865547
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=32	ts=2
+Time (ms): 0.031586	Total Bytes (MB): 12.015625	Memory (GB/s): 380.413567
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=64	ts=1
+Time (ms): 0.037617	Total Bytes (MB): 12.015625	Memory (GB/s): 319.420840
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=1	ts=32
+Time (ms): 0.036300	Total Bytes (MB): 12.015625	Memory (GB/s): 331.005397
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=2	ts=16
+Time (ms): 0.032289	Total Bytes (MB): 12.015625	Memory (GB/s): 372.127044
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=4	ts=8
+Time (ms): 0.026508	Total Bytes (MB): 12.015625	Memory (GB/s): 453.276302
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=8	ts=4
+Time (ms): 0.027451	Total Bytes (MB): 12.015625	Memory (GB/s): 437.709987
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=16	ts=2
+Time (ms): 0.028099	Total Bytes (MB): 12.015625	Memory (GB/s): 427.612509
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=4	vec_c=4	tile_s=1	tile_r=32	tr=32	ts=1
+Time (ms): 0.029686	Total Bytes (MB): 12.015625	Memory (GB/s): 404.756066
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=1	ts=512
+Time (ms): 0.216697	Total Bytes (MB): 12.015625	Memory (GB/s): 55.448860
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=2	ts=256
+Time (ms): 0.105437	Total Bytes (MB): 12.015625	Memory (GB/s): 113.959778
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=4	ts=128
+Time (ms): 0.059918	Total Bytes (MB): 12.015625	Memory (GB/s): 200.533443
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=8	ts=64
+Time (ms): 0.037542	Total Bytes (MB): 12.015625	Memory (GB/s): 320.056155
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=16	ts=32
+Time (ms): 0.037188	Total Bytes (MB): 12.015625	Memory (GB/s): 323.104726
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=32	ts=16
+Time (ms): 0.032998	Total Bytes (MB): 12.015625	Memory (GB/s): 364.128496
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=64	ts=8
+Time (ms): 0.026782	Total Bytes (MB): 12.015625	Memory (GB/s): 448.645378
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=128	ts=4
+Time (ms): 0.027335	Total Bytes (MB): 12.015625	Memory (GB/s): 439.566661
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=256	ts=2
+Time (ms): 0.028405	Total Bytes (MB): 12.015625	Memory (GB/s): 423.011211
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=1	ts=256
+Time (ms): 0.117376	Total Bytes (MB): 12.015625	Memory (GB/s): 102.368687
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=2	ts=128
+Time (ms): 0.061449	Total Bytes (MB): 12.015625	Memory (GB/s): 195.537502
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=4	ts=64
+Time (ms): 0.033222	Total Bytes (MB): 12.015625	Memory (GB/s): 361.678928
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=8	ts=32
+Time (ms): 0.028257	Total Bytes (MB): 12.015625	Memory (GB/s): 425.220774
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=16	ts=16
+Time (ms): 0.032893	Total Bytes (MB): 12.015625	Memory (GB/s): 365.295176
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=32	ts=8
+Time (ms): 0.028994	Total Bytes (MB): 12.015625	Memory (GB/s): 414.411778
+Best time (ms): 0.025545	Best Memory (GB/s): 470.375702	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 4, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=64	ts=4
+Time (ms): 0.025486	Total Bytes (MB): 12.015625	Memory (GB/s): 471.451312
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=128	ts=2
+Time (ms): 0.027809	Total Bytes (MB): 12.015625	Memory (GB/s): 432.072495
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=256	ts=1
+Time (ms): 0.025976	Total Bytes (MB): 12.015625	Memory (GB/s): 462.558394
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=1	ts=128
+Time (ms): 0.067953	Total Bytes (MB): 12.015625	Memory (GB/s): 176.821308
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=2	ts=64
+Time (ms): 0.046361	Total Bytes (MB): 12.015625	Memory (GB/s): 259.176115
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=4	ts=32
+Time (ms): 0.031733	Total Bytes (MB): 12.015625	Memory (GB/s): 378.641656
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=8	ts=16
+Time (ms): 0.031882	Total Bytes (MB): 12.015625	Memory (GB/s): 376.873882
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=16	ts=8
+Time (ms): 0.028853	Total Bytes (MB): 12.015625	Memory (GB/s): 416.443408
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=32	ts=4
+Time (ms): 0.026236	Total Bytes (MB): 12.015625	Memory (GB/s): 457.988288
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=64	ts=2
+Time (ms): 0.027523	Total Bytes (MB): 12.015625	Memory (GB/s): 436.566531
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=128	ts=1
+Time (ms): 0.026931	Total Bytes (MB): 12.015625	Memory (GB/s): 446.161190
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=1	ts=64
+Time (ms): 0.058260	Total Bytes (MB): 12.015625	Memory (GB/s): 206.240002
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=2	ts=32
+Time (ms): 0.043623	Total Bytes (MB): 12.015625	Memory (GB/s): 275.439838
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=4	ts=16
+Time (ms): 0.029141	Total Bytes (MB): 12.015625	Memory (GB/s): 412.331944
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=8	ts=8
+Time (ms): 0.027180	Total Bytes (MB): 12.015625	Memory (GB/s): 442.072234
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=16	ts=4
+Time (ms): 0.036246	Total Bytes (MB): 12.015625	Memory (GB/s): 331.499536
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=32	ts=2
+Time (ms): 0.031208	Total Bytes (MB): 12.015625	Memory (GB/s): 385.011912
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=64	ts=1
+Time (ms): 0.037497	Total Bytes (MB): 12.015625	Memory (GB/s): 320.439995
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=1	ts=32
+Time (ms): 0.036327	Total Bytes (MB): 12.015625	Memory (GB/s): 330.765936
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=2	ts=16
+Time (ms): 0.031962	Total Bytes (MB): 12.015625	Memory (GB/s): 375.938350
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=4	ts=8
+Time (ms): 0.026560	Total Bytes (MB): 12.015625	Memory (GB/s): 452.396882
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=8	ts=4
+Time (ms): 0.027375	Total Bytes (MB): 12.015625	Memory (GB/s): 438.923574
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=16	ts=2
+Time (ms): 0.031066	Total Bytes (MB): 12.015625	Memory (GB/s): 386.775975
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=32	tr=32	ts=1
+Time (ms): 0.026981	Total Bytes (MB): 12.015625	Memory (GB/s): 445.329271
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=1	ts=512
+Time (ms): 0.216547	Total Bytes (MB): 12.015625	Memory (GB/s): 55.487433
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=2	ts=256
+Time (ms): 0.103655	Total Bytes (MB): 12.015625	Memory (GB/s): 115.919016
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=4	ts=128
+Time (ms): 0.062092	Total Bytes (MB): 12.015625	Memory (GB/s): 193.514376
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=8	ts=64
+Time (ms): 0.035053	Total Bytes (MB): 12.015625	Memory (GB/s): 342.784791
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=16	ts=32
+Time (ms): 0.028567	Total Bytes (MB): 12.015625	Memory (GB/s): 420.613248
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=32	ts=16
+Time (ms): 0.025544	Total Bytes (MB): 12.015625	Memory (GB/s): 470.385093
+Best time (ms): 0.025486	Best Memory (GB/s): 471.451312	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 32, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=64	ts=8
+Time (ms): 0.024967	Total Bytes (MB): 12.015625	Memory (GB/s): 481.261420
+Best time (ms): 0.024967	Best Memory (GB/s): 481.261420	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 64, 'TS': 8}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=128	ts=4
+Time (ms): 0.024805	Total Bytes (MB): 12.015625	Memory (GB/s): 484.406861
+Best time (ms): 0.024805	Best Memory (GB/s): 484.406861	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=256	ts=2
+Time (ms): 0.024847	Total Bytes (MB): 12.015625	Memory (GB/s): 483.590182
+Best time (ms): 0.024805	Best Memory (GB/s): 484.406861	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=1	ts=256
+Time (ms): 0.116835	Total Bytes (MB): 12.015625	Memory (GB/s): 102.842526
+Best time (ms): 0.024805	Best Memory (GB/s): 484.406861	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=2	ts=128
+Time (ms): 0.060403	Total Bytes (MB): 12.015625	Memory (GB/s): 198.924144
+Best time (ms): 0.024805	Best Memory (GB/s): 484.406861	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=4	ts=64
+Time (ms): 0.036892	Total Bytes (MB): 12.015625	Memory (GB/s): 325.693686
+Best time (ms): 0.024805	Best Memory (GB/s): 484.406861	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=8	ts=32
+Time (ms): 0.031313	Total Bytes (MB): 12.015625	Memory (GB/s): 383.726040
+Best time (ms): 0.024805	Best Memory (GB/s): 484.406861	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=16	ts=16
+Time (ms): 0.025043	Total Bytes (MB): 12.015625	Memory (GB/s): 479.797254
+Best time (ms): 0.024805	Best Memory (GB/s): 484.406861	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=32	ts=8
+Time (ms): 0.024443	Total Bytes (MB): 12.015625	Memory (GB/s): 491.569701
+Best time (ms): 0.024443	Best Memory (GB/s): 491.569701	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 32, 'TS': 8}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=64	ts=4
+Time (ms): 0.024729	Total Bytes (MB): 12.015625	Memory (GB/s): 485.885586
+Best time (ms): 0.024443	Best Memory (GB/s): 491.569701	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 32, 'TS': 8}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=128	ts=2
+Time (ms): 0.024662	Total Bytes (MB): 12.015625	Memory (GB/s): 487.204008
+Best time (ms): 0.024443	Best Memory (GB/s): 491.569701	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 32, 'TS': 8}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=256	ts=1
+Time (ms): 0.024415	Total Bytes (MB): 12.015625	Memory (GB/s): 492.131023
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=1	ts=128
+Time (ms): 0.068166	Total Bytes (MB): 12.015625	Memory (GB/s): 176.270966
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=2	ts=64
+Time (ms): 0.043880	Total Bytes (MB): 12.015625	Memory (GB/s): 273.831939
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=4	ts=32
+Time (ms): 0.030942	Total Bytes (MB): 12.015625	Memory (GB/s): 388.328358
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=8	ts=16
+Time (ms): 0.025831	Total Bytes (MB): 12.015625	Memory (GB/s): 465.170906
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=16	ts=8
+Time (ms): 0.024560	Total Bytes (MB): 12.015625	Memory (GB/s): 489.239530
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=32	ts=4
+Time (ms): 0.026117	Total Bytes (MB): 12.015625	Memory (GB/s): 460.075982
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=64	ts=2
+Time (ms): 0.024623	Total Bytes (MB): 12.015625	Memory (GB/s): 487.987165
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=128	ts=1
+Time (ms): 0.024514	Total Bytes (MB): 12.015625	Memory (GB/s): 490.157385
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=1	ts=64
+Time (ms): 0.058644	Total Bytes (MB): 12.015625	Memory (GB/s): 204.891930
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=2	ts=32
+Time (ms): 0.039495	Total Bytes (MB): 12.015625	Memory (GB/s): 304.235092
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=4	ts=16
+Time (ms): 0.025775	Total Bytes (MB): 12.015625	Memory (GB/s): 466.174703
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=8	ts=8
+Time (ms): 0.024770	Total Bytes (MB): 12.015625	Memory (GB/s): 485.081345
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=16	ts=4
+Time (ms): 0.025983	Total Bytes (MB): 12.015625	Memory (GB/s): 462.448730
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=32	ts=2
+Time (ms): 0.025646	Total Bytes (MB): 12.015625	Memory (GB/s): 468.513733
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=64	ts=1
+Time (ms): 0.024595	Total Bytes (MB): 12.015625	Memory (GB/s): 488.532981
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=1	ts=32
+Time (ms): 0.036793	Total Bytes (MB): 12.015625	Memory (GB/s): 326.574823
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=2	ts=16
+Time (ms): 0.025331	Total Bytes (MB): 12.015625	Memory (GB/s): 474.346549
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=4	ts=8
+Time (ms): 0.025199	Total Bytes (MB): 12.015625	Memory (GB/s): 476.826599
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=8	ts=4
+Time (ms): 0.024882	Total Bytes (MB): 12.015625	Memory (GB/s): 482.913430
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=16	ts=2
+Time (ms): 0.024968	Total Bytes (MB): 12.015625	Memory (GB/s): 481.240025
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=2	vec_c=4	tile_s=1	tile_r=16	tr=32	ts=1
+Time (ms): 0.025142	Total Bytes (MB): 12.015625	Memory (GB/s): 477.911799
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=1	ts=512
+Time (ms): 0.216603	Total Bytes (MB): 12.015625	Memory (GB/s): 55.472919
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=2	ts=256
+Time (ms): 0.105258	Total Bytes (MB): 12.015625	Memory (GB/s): 114.154487
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=4	ts=128
+Time (ms): 0.059856	Total Bytes (MB): 12.015625	Memory (GB/s): 200.742567
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=8	ts=64
+Time (ms): 0.043649	Total Bytes (MB): 12.015625	Memory (GB/s): 275.278105
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=16	ts=32
+Time (ms): 0.037343	Total Bytes (MB): 12.015625	Memory (GB/s): 321.764388
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=32	ts=16
+Time (ms): 0.032923	Total Bytes (MB): 12.015625	Memory (GB/s): 364.960317
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=64	ts=8
+Time (ms): 0.026648	Total Bytes (MB): 12.015625	Memory (GB/s): 450.903768
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=128	ts=4
+Time (ms): 0.027522	Total Bytes (MB): 12.015625	Memory (GB/s): 436.590167
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=256	ts=2
+Time (ms): 0.028356	Total Bytes (MB): 12.015625	Memory (GB/s): 423.737854
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=1	ts=256
+Time (ms): 0.117231	Total Bytes (MB): 12.015625	Memory (GB/s): 102.495558
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=2	ts=128
+Time (ms): 0.061318	Total Bytes (MB): 12.015625	Memory (GB/s): 195.954416
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=4	ts=64
+Time (ms): 0.033230	Total Bytes (MB): 12.015625	Memory (GB/s): 361.591963
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=8	ts=32
+Time (ms): 0.032225	Total Bytes (MB): 12.015625	Memory (GB/s): 372.866216
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=16	ts=16
+Time (ms): 0.032944	Total Bytes (MB): 12.015625	Memory (GB/s): 364.723468
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=32	ts=8
+Time (ms): 0.028793	Total Bytes (MB): 12.015625	Memory (GB/s): 417.313530
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=64	ts=4
+Time (ms): 0.025514	Total Bytes (MB): 12.015625	Memory (GB/s): 470.949069
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=128	ts=2
+Time (ms): 0.026355	Total Bytes (MB): 12.015625	Memory (GB/s): 455.917897
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=256	ts=1
+Time (ms): 0.026414	Total Bytes (MB): 12.015625	Memory (GB/s): 454.897283
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=1	ts=128
+Time (ms): 0.067944	Total Bytes (MB): 12.015625	Memory (GB/s): 176.846292
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=2	ts=64
+Time (ms): 0.046260	Total Bytes (MB): 12.015625	Memory (GB/s): 259.740632
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=4	ts=32
+Time (ms): 0.031678	Total Bytes (MB): 12.015625	Memory (GB/s): 379.299411
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=8	ts=16
+Time (ms): 0.038718	Total Bytes (MB): 12.015625	Memory (GB/s): 310.335641
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=16	ts=8
+Time (ms): 0.028803	Total Bytes (MB): 12.015625	Memory (GB/s): 417.161257
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=32	ts=4
+Time (ms): 0.026502	Total Bytes (MB): 12.015625	Memory (GB/s): 453.392266
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=64	ts=2
+Time (ms): 0.027037	Total Bytes (MB): 12.015625	Memory (GB/s): 444.411835
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=128	ts=1
+Time (ms): 0.028626	Total Bytes (MB): 12.015625	Memory (GB/s): 419.741203
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=1	ts=64
+Time (ms): 0.057973	Total Bytes (MB): 12.015625	Memory (GB/s): 207.261145
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=2	ts=32
+Time (ms): 0.043584	Total Bytes (MB): 12.015625	Memory (GB/s): 275.688457
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=4	ts=16
+Time (ms): 0.029229	Total Bytes (MB): 12.015625	Memory (GB/s): 411.086721
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=8	ts=8
+Time (ms): 0.028865	Total Bytes (MB): 12.015625	Memory (GB/s): 416.264080
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=16	ts=4
+Time (ms): 0.036316	Total Bytes (MB): 12.015625	Memory (GB/s): 330.859474
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=32	ts=2
+Time (ms): 0.030989	Total Bytes (MB): 12.015625	Memory (GB/s): 387.742020
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=64	ts=1
+Time (ms): 0.037697	Total Bytes (MB): 12.015625	Memory (GB/s): 318.739671
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=1	ts=32
+Time (ms): 0.036271	Total Bytes (MB): 12.015625	Memory (GB/s): 331.271141
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=2	ts=16
+Time (ms): 0.031908	Total Bytes (MB): 12.015625	Memory (GB/s): 376.572103
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=4	ts=8
+Time (ms): 0.026511	Total Bytes (MB): 12.015625	Memory (GB/s): 453.239029
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=8	ts=4
+Time (ms): 0.029836	Total Bytes (MB): 12.015625	Memory (GB/s): 402.716713
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=16	ts=2
+Time (ms): 0.031106	Total Bytes (MB): 12.015625	Memory (GB/s): 386.276004
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=32	tr=32	ts=1
+Time (ms): 0.026959	Total Bytes (MB): 12.015625	Memory (GB/s): 445.699290
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=1	ts=512
+Time (ms): 0.216478	Total Bytes (MB): 12.015625	Memory (GB/s): 55.505142
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=2	ts=256
+Time (ms): 0.102584	Total Bytes (MB): 12.015625	Memory (GB/s): 117.129621
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=4	ts=128
+Time (ms): 0.061675	Total Bytes (MB): 12.015625	Memory (GB/s): 194.821267
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=8	ts=64
+Time (ms): 0.033377	Total Bytes (MB): 12.015625	Memory (GB/s): 360.000282
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=16	ts=32
+Time (ms): 0.028455	Total Bytes (MB): 12.015625	Memory (GB/s): 422.269842
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=32	ts=16
+Time (ms): 0.025799	Total Bytes (MB): 12.015625	Memory (GB/s): 465.742479
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=64	ts=8
+Time (ms): 0.024717	Total Bytes (MB): 12.015625	Memory (GB/s): 486.123838
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=128	ts=4
+Time (ms): 0.025344	Total Bytes (MB): 12.015625	Memory (GB/s): 474.106416
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=256	ts=2
+Time (ms): 0.024769	Total Bytes (MB): 12.015625	Memory (GB/s): 485.106805
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=1	ts=256
+Time (ms): 0.116833	Total Bytes (MB): 12.015625	Memory (GB/s): 102.844480
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=2	ts=128
+Time (ms): 0.060413	Total Bytes (MB): 12.015625	Memory (GB/s): 198.891776
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=4	ts=64
+Time (ms): 0.036798	Total Bytes (MB): 12.015625	Memory (GB/s): 326.532046
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=8	ts=32
+Time (ms): 0.031713	Total Bytes (MB): 12.015625	Memory (GB/s): 378.886060
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=16	ts=16
+Time (ms): 0.025011	Total Bytes (MB): 12.015625	Memory (GB/s): 480.417652
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=32	ts=8
+Time (ms): 0.024762	Total Bytes (MB): 12.015625	Memory (GB/s): 485.244528
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=64	ts=4
+Time (ms): 0.024610	Total Bytes (MB): 12.015625	Memory (GB/s): 488.241172
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=128	ts=2
+Time (ms): 0.025260	Total Bytes (MB): 12.015625	Memory (GB/s): 475.671923
+Best time (ms): 0.024415	Best Memory (GB/s): 492.131023	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 2, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=256	ts=1
+Time (ms): 0.024316	Total Bytes (MB): 12.015625	Memory (GB/s): 494.151305
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=1	ts=128
+Time (ms): 0.068176	Total Bytes (MB): 12.015625	Memory (GB/s): 176.243715
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=2	ts=64
+Time (ms): 0.043726	Total Bytes (MB): 12.015625	Memory (GB/s): 274.791841
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=4	ts=32
+Time (ms): 0.031007	Total Bytes (MB): 12.015625	Memory (GB/s): 387.518802
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=8	ts=16
+Time (ms): 0.025799	Total Bytes (MB): 12.015625	Memory (GB/s): 465.734896
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=16	ts=8
+Time (ms): 0.024519	Total Bytes (MB): 12.015625	Memory (GB/s): 490.063026
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=32	ts=4
+Time (ms): 0.026169	Total Bytes (MB): 12.015625	Memory (GB/s): 459.147898
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=64	ts=2
+Time (ms): 0.024663	Total Bytes (MB): 12.015625	Memory (GB/s): 487.183661
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=128	ts=1
+Time (ms): 0.024556	Total Bytes (MB): 12.015625	Memory (GB/s): 489.316235
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=1	ts=64
+Time (ms): 0.058627	Total Bytes (MB): 12.015625	Memory (GB/s): 204.948861
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=2	ts=32
+Time (ms): 0.039547	Total Bytes (MB): 12.015625	Memory (GB/s): 303.828905
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=4	ts=16
+Time (ms): 0.025684	Total Bytes (MB): 12.015625	Memory (GB/s): 467.825664
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=8	ts=8
+Time (ms): 0.024768	Total Bytes (MB): 12.015625	Memory (GB/s): 485.131875
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=16	ts=4
+Time (ms): 0.026303	Total Bytes (MB): 12.015625	Memory (GB/s): 456.819062
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=32	ts=2
+Time (ms): 0.025090	Total Bytes (MB): 12.015625	Memory (GB/s): 478.910310
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=64	ts=1
+Time (ms): 0.025071	Total Bytes (MB): 12.015625	Memory (GB/s): 479.258538
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=1	ts=32
+Time (ms): 0.036697	Total Bytes (MB): 12.015625	Memory (GB/s): 327.426475
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=2	ts=16
+Time (ms): 0.025192	Total Bytes (MB): 12.015625	Memory (GB/s): 476.958714
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=4	ts=8
+Time (ms): 0.025253	Total Bytes (MB): 12.015625	Memory (GB/s): 475.818472
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=8	ts=4
+Time (ms): 0.024804	Total Bytes (MB): 12.015625	Memory (GB/s): 484.430883
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=16	ts=2
+Time (ms): 0.024797	Total Bytes (MB): 12.015625	Memory (GB/s): 484.569199
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=16	tr=32	ts=1
+Time (ms): 0.024976	Total Bytes (MB): 12.015625	Memory (GB/s): 481.088192
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=1	ts=512
+Time (ms): 0.216590	Total Bytes (MB): 12.015625	Memory (GB/s): 55.476371
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=2	ts=256
+Time (ms): 0.110471	Total Bytes (MB): 12.015625	Memory (GB/s): 108.767263
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=4	ts=128
+Time (ms): 0.062388	Total Bytes (MB): 12.015625	Memory (GB/s): 192.596273
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=8	ts=64
+Time (ms): 0.034901	Total Bytes (MB): 12.015625	Memory (GB/s): 344.280837
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=16	ts=32
+Time (ms): 0.028375	Total Bytes (MB): 12.015625	Memory (GB/s): 423.451285
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=32	ts=16
+Time (ms): 0.025153	Total Bytes (MB): 12.015625	Memory (GB/s): 477.694250
+Best time (ms): 0.024316	Best Memory (GB/s): 494.151305	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 16, 'TR': 256, 'TS': 1}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=64	ts=8
+Time (ms): 0.024265	Total Bytes (MB): 12.015625	Memory (GB/s): 495.188698
+Best time (ms): 0.024265	Best Memory (GB/s): 495.188698	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 64, 'TS': 8}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=128	ts=4
+Time (ms): 0.024073	Total Bytes (MB): 12.015625	Memory (GB/s): 499.137822
+Best time (ms): 0.024073	Best Memory (GB/s): 499.137822	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=256	ts=2
+Time (ms): 0.024357	Total Bytes (MB): 12.015625	Memory (GB/s): 493.319289
+Best time (ms): 0.024073	Best Memory (GB/s): 499.137822	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=1	ts=256
+Time (ms): 0.116923	Total Bytes (MB): 12.015625	Memory (GB/s): 102.765404
+Best time (ms): 0.024073	Best Memory (GB/s): 499.137822	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=2	ts=128
+Time (ms): 0.060625	Total Bytes (MB): 12.015625	Memory (GB/s): 198.194863
+Best time (ms): 0.024073	Best Memory (GB/s): 499.137822	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=4	ts=64
+Time (ms): 0.036827	Total Bytes (MB): 12.015625	Memory (GB/s): 326.274291
+Best time (ms): 0.024073	Best Memory (GB/s): 499.137822	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=8	ts=32
+Time (ms): 0.032403	Total Bytes (MB): 12.015625	Memory (GB/s): 370.814169
+Best time (ms): 0.024073	Best Memory (GB/s): 499.137822	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=16	ts=16
+Time (ms): 0.024581	Total Bytes (MB): 12.015625	Memory (GB/s): 488.819969
+Best time (ms): 0.024073	Best Memory (GB/s): 499.137822	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=32	ts=8
+Time (ms): 0.024100	Total Bytes (MB): 12.015625	Memory (GB/s): 498.581927
+Best time (ms): 0.024073	Best Memory (GB/s): 499.137822	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 128, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=64	ts=4
+Time (ms): 0.023997	Total Bytes (MB): 12.015625	Memory (GB/s): 500.709249
+Best time (ms): 0.023997	Best Memory (GB/s): 500.709249	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=128	ts=2
+Time (ms): 0.024133	Total Bytes (MB): 12.015625	Memory (GB/s): 497.893748
+Best time (ms): 0.023997	Best Memory (GB/s): 500.709249	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=256	ts=1
+Time (ms): 0.024152	Total Bytes (MB): 12.015625	Memory (GB/s): 497.497323
+Best time (ms): 0.023997	Best Memory (GB/s): 500.709249	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=1	ts=128
+Time (ms): 0.067913	Total Bytes (MB): 12.015625	Memory (GB/s): 176.925453
+Best time (ms): 0.023997	Best Memory (GB/s): 500.709249	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=2	ts=64
+Time (ms): 0.043904	Total Bytes (MB): 12.015625	Memory (GB/s): 273.678383
+Best time (ms): 0.023997	Best Memory (GB/s): 500.709249	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=4	ts=32
+Time (ms): 0.032237	Total Bytes (MB): 12.015625	Memory (GB/s): 372.728691
+Best time (ms): 0.023997	Best Memory (GB/s): 500.709249	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=8	ts=16
+Time (ms): 0.026114	Total Bytes (MB): 12.015625	Memory (GB/s): 460.116327
+Best time (ms): 0.023997	Best Memory (GB/s): 500.709249	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 64, 'TS': 4}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=16	ts=8
+Time (ms): 0.023842	Total Bytes (MB): 12.015625	Memory (GB/s): 503.973487
+Best time (ms): 0.023842	Best Memory (GB/s): 503.973487	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 16, 'TS': 8}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=32	ts=4
+Time (ms): 0.024192	Total Bytes (MB): 12.015625	Memory (GB/s): 496.680700
+Best time (ms): 0.023842	Best Memory (GB/s): 503.973487	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 16, 'TS': 8}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=64	ts=2
+Time (ms): 0.024199	Total Bytes (MB): 12.015625	Memory (GB/s): 496.543592
+Best time (ms): 0.023842	Best Memory (GB/s): 503.973487	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 16, 'TS': 8}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=128	ts=1
+Time (ms): 0.023935	Total Bytes (MB): 12.015625	Memory (GB/s): 502.020512
+Best time (ms): 0.023842	Best Memory (GB/s): 503.973487	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 16, 'TS': 8}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=1	ts=64
+Time (ms): 0.058605	Total Bytes (MB): 12.015625	Memory (GB/s): 205.028141
+Best time (ms): 0.023842	Best Memory (GB/s): 503.973487	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 16, 'TS': 8}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=2	ts=32
+Time (ms): 0.039851	Total Bytes (MB): 12.015625	Memory (GB/s): 301.513461
+Best time (ms): 0.023842	Best Memory (GB/s): 503.973487	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 16, 'TS': 8}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=4	ts=16
+Time (ms): 0.025381	Total Bytes (MB): 12.015625	Memory (GB/s): 473.414145
+Best time (ms): 0.023842	Best Memory (GB/s): 503.973487	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 16, 'TS': 8}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=8	ts=8
+Time (ms): 0.024323	Total Bytes (MB): 12.015625	Memory (GB/s): 493.995888
+Best time (ms): 0.023842	Best Memory (GB/s): 503.973487	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 16, 'TS': 8}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=16	ts=4
+Time (ms): 0.024836	Total Bytes (MB): 12.015625	Memory (GB/s): 483.795992
+Best time (ms): 0.023842	Best Memory (GB/s): 503.973487	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 16, 'TS': 8}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=32	ts=2
+Time (ms): 0.024458	Total Bytes (MB): 12.015625	Memory (GB/s): 491.268027
+Best time (ms): 0.023842	Best Memory (GB/s): 503.973487	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 16, 'TS': 8}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=64	ts=1
+Time (ms): 0.024094	Total Bytes (MB): 12.015625	Memory (GB/s): 498.700913
+Best time (ms): 0.023842	Best Memory (GB/s): 503.973487	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 16, 'TS': 8}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=1	ts=32
+Time (ms): 0.036804	Total Bytes (MB): 12.015625	Memory (GB/s): 326.478369
+Best time (ms): 0.023842	Best Memory (GB/s): 503.973487	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 16, 'TS': 8}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=2	ts=16
+Time (ms): 0.025024	Total Bytes (MB): 12.015625	Memory (GB/s): 480.171334
+Best time (ms): 0.023842	Best Memory (GB/s): 503.973487	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 16, 'TS': 8}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=4	ts=8
+Time (ms): 0.024758	Total Bytes (MB): 12.015625	Memory (GB/s): 485.319790
+Best time (ms): 0.023842	Best Memory (GB/s): 503.973487	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 16, 'TS': 8}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=8	ts=4
+Time (ms): 0.024111	Total Bytes (MB): 12.015625	Memory (GB/s): 498.342263
+Best time (ms): 0.023842	Best Memory (GB/s): 503.973487	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 16, 'TS': 8}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=16	ts=2
+Time (ms): 0.024252	Total Bytes (MB): 12.015625	Memory (GB/s): 495.443517
+Best time (ms): 0.023842	Best Memory (GB/s): 503.973487	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 16, 'TS': 8}
+====
+schedule 2: TAG_S=threadIdx.x	TAG_R=threadIdx.y	vec_load=1	vec_c=4	tile_s=1	tile_r=8	tr=32	ts=1
+Time (ms): 0.024171	Total Bytes (MB): 12.015625	Memory (GB/s): 497.115309
+Best time (ms): 0.023842	Best Memory (GB/s): 503.973487	Best config: {'TAG_S': 'threadIdx.x', 'TAG_R': 'threadIdx.y', 'VEC_LOAD': 1, 'VEC_C': 4, 'TILE_S': 1, 'TILE_R': 8, 'TR': 16, 'TS': 8}
